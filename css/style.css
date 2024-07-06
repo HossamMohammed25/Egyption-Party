@@ -1,0 +1,363 @@
+body {
+    color: #fff;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+*{
+    scroll-behavior: auto !important;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#home {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/events-heavenly-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    color: white;
+    position: relative;
+    h2 {
+        margin-top: 200px;
+        font-size: 60px;
+    }
+    
+}
+
+#leftMenu {
+    height: 100%;
+    width:0 ;
+    position: fixed;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    /* display: none; */
+    z-index: 1;
+}
+
+.sidenav a {
+    padding: 20px 8px 20px 32px;
+    font-size: 25px;
+    display: block;
+    transition: 0.3s;
+    color: white;
+}
+
+.sidenav a:hover {
+    color: rgba(214, 46, 51, 0.4);
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.closebtn:hover{
+    color: rgba(214, 46, 51, 0.4);
+}
+
+
+#home-content {
+    transition: 0.5s;
+    padding: 16px;
+
+    span {
+        font-size: 30px;
+        cursor: pointer;
+    }
+   
+}
+
+
+/*************************************************** accordion ************************************/
+
+#sliderDown {
+    margin: 100px auto;
+    width: 50%;
+}
+
+#sliderDown h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+}
+
+#sliderDown div {
+    padding: 10px;
+    background-color: #ccc;
+    color: #111;
+}
+
+.inner {
+    display: none;
+}
+
+.first {
+    display: block;
+}
+
+/*************************************************** counter ************************************/
+#counter {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/invitation-2508607__340.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+
+    .tim {
+        padding: 50px;
+        border: 1px solid #FFF;
+        font-weight: 500;
+        font-size: 30px;
+    }
+
+    .container {
+        padding: 100px 0;
+    }
+}
+
+/****************************************     contact     *****************************/
+
+#contact-us .head{
+ h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    color: #444;
+    font-weight: bold;
+    margin-bottom: 20px;
+}p{
+    font-weight: 300;
+}
+}
+#contact-us {
+    margin-top: 100px;
+    color: #444;
+    p{
+       color: #777777;
+    }
+
+}
+
+#contact-us .icons {
+    margin-top: 50px;
+}
+
+#contact-us .con-info .social-list {
+    margin-top: 60px;
+    color: #777;
+    font-weight: 300;
+
+}
+
+#contact-us form input,#contact-us form textarea {
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+#contact-us .icons p{
+    margin-bottom: 35px;
+}
+#contact-us i{
+    margin-right: 20px;
+    color:#777;
+}
+#contact-us .red{
+    color:#D62E33 !important;
+}
+
+#contact-us .con-info h3 {
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#contact-us form textarea {
+    height: 200px;
+    resize: vertical;
+    margin-bottom: 20px;
+    border-radius: 0;
+
+}
+
+#chars {
+    font-size: 20px;
+    color: #D62E33;
+}
+
+#contact-us form button {
+    background-color: #D62E33;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-transform: uppercase;
+}
+
+#contact-us .con-info .social-list i {
+    margin-right: 10px;
+    border: 1px solid #999;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+}
+#contact-us .con-info .social-list i:hover{
+    color:#fff;
+    background-color: #D62E33;
+    border:1px solid #D62E33;
+}
+
+@media(max-width:991px){
+    #sliderDown {
+        width: 95%;
+    }
+    #counter{
+         height: 100%;
+    }
+    .tim{
+        margin: 10px;
+    }
+    .social-list{
+        margin-bottom: 30px;
+    }
+}
+
+#toggle-dark-mode{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #D62E33;
+    padding: 10px 15px  ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Light Mode */
+
+
+body.light-mode #home {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/events-heavenly-header.jpg);
+}
+
+body.light-mode #leftMenu {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode .sidenav a {
+    color: #000;
+}
+
+body.light-mode .sidenav a:hover {
+    color: rgba(214, 46, 51, 0.6);
+}
+
+body.light-mode .closebtn {
+    color: #000;
+}
+
+body.light-mode .closebtn:hover {
+    color: rgba(214, 46, 51, 0.6);
+}
+
+body.light-mode #sliderDown h3 {
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+body.light-mode #sliderDown div {
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+body.light-mode #counter {
+    background-image: linear-gradient(rgba(214, 46, 51, 0.6), rgba(214, 46, 51, 0.6)), url(../images/invitation-2508607__340.jpg);
+}
+
+body.light-mode #contact-us {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light-mode #contact-us p {
+    color: #444;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    color: #fff;
+    background-color: #121212;
+}
+
+body.dark-mode #home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/events-heavenly-header.jpg);
+}
+
+body.dark-mode #leftMenu {
+    background-color: #111;
+    color: #fff;
+}
+
+body.dark-mode .sidenav a {
+    color: #fff;
+}
+
+body.dark-mode .sidenav a:hover {
+    color: rgba(214, 46, 51, 0.6);
+}
+
+body.dark-mode .closebtn {
+    color: #fff;
+}
+
+body.dark-mode .closebtn:hover {
+    color: rgba(214, 46, 51, 0.6);
+}
+
+body.dark-mode #sliderDown h3 {
+    background-color: rgba(214, 46, 51, 0.6);
+}
+
+body.dark-mode #sliderDown div {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode #counter {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/invitation-2508607__340.jpg);
+}
+
+body.dark-mode #contact-us {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode #contact-us p {
+    color: #bbb;
+}
